@@ -1,1 +1,0 @@
-# smelayapanda.github.io

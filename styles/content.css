@@ -1,0 +1,21 @@
+#content {
+    max-width: calc(100% - 300px);
+    margin-bottom: 40px;
+    margin-top: 55px;
+}
+
+#content img {
+    max-width: calc(80vw - 150px);
+}
+
+@media all and (max-width: 980px) {
+    #content {
+        max-width: 100%;
+        padding: 10px;
+        margin-bottom: 80px;
+    }
+
+    #content img {
+        max-width: calc(80vw);
+    }
+}

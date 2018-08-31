@@ -1,0 +1,50 @@
+
+#bottom-menu {
+    position: fixed;
+    bottom: 0;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+#bottom-menu .bottom-menu-item {
+    display: inline-block;
+}
+
+#bottom-menu .bottom-menu-item:hover,
+.bottom-menu-item.is-active-bottom-item {
+    cursor: pointer;
+    background-color: forestgreen;
+}
+
+#bottom-menu .bottom-menu-item:hover a{
+    color: white;
+}
+
+#bottom-menu {
+    height: 32px;
+    width: 100%;
+    -webkit-overflow-scrolling: touch;
+}
+
+#bottom-menu a {
+    text-decoration: none;
+    color: black;
+}
+
+#bottom-menu::-webkit-scrollbar {
+    display: none;
+}
+
+.bottom-menu-item {
+    border: 1px solid white;
+    height: 32px;
+    padding: 5px 15px;
+    background: #5baae6;
+}
+
+@media all and (max-width: 980px) {
+    #bottom-menu {
+        bottom: 38px;
+    }
+}

@@ -1,0 +1,76 @@
+#toc {
+    position: fixed;
+    right: 20px;
+    width: 280px;
+}
+
+#toc li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background: #5baae6;
+    display: block;
+}
+
+#toc li a {
+    padding: 8px;
+    margin: 1px;
+    display: block;
+    cursor: pointer;
+}
+
+#toc a:hover {
+    cursor: pointer;
+    background-color: forestgreen;
+    color: white;
+}
+
+.is-active-link {
+    background-color: forestgreen;
+}
+
+a.is-active-link {
+    color: white;
+}
+
+.toc-link::before {
+    display: none;
+}
+
+@media all and (max-width: 980px) {
+    #toc {
+        bottom: 0 !important;
+        left: 0;
+        margin-right: 20px;
+    }
+
+    #toc li {
+        margin-left: 1px;
+    }
+
+    #toc li a {
+    }
+
+    .toc-list {
+        width: 100vw;
+        height: 32px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+        -ms-overflow-style: none;
+        overflow: -moz-scrollbars-none;
+    }
+
+    toc-list::-webkit-scrollbar {
+        display: none;
+        width: 0 !important;
+    }
+
+    .toc-list-item {
+        height: 32px;
+    }
+}

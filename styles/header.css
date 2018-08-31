@@ -1,0 +1,71 @@
+.header-up {
+    top: -50px;
+}
+
+header {
+    background: forestgreen;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    transition: top 0.2s ease-in-out;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+}
+
+#top-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 0 20px;
+}
+
+#top-menu .top-menu-item {
+    height: 24px;
+    line-height: 24px;
+}
+
+#top-menu .top-menu-item:hover,
+.top-menu-item.is-active-top-menu-item {
+    cursor: pointer;
+    background-color: forestgreen;
+}
+
+#top-menu.top-menu-item:hover a {
+    color: white;
+}
+
+#top-menu a {
+    text-decoration: none;
+    color: black;
+}
+
+header::-webkit-scrollbar {
+    display: none;
+}
+
+.top-menu-item {
+    border: 1px solid white;
+    height: 32px;
+    padding: 5px 15px;
+    background: #5baae6;
+}
+
+@media all and (max-width: 980px) {
+    header {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+}

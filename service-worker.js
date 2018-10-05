@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.5.0/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.b46bb04996a83fa08f04d2e83c56d3b9.js"
+  "/precache-manifest.b55d0c42b1b33dcf9c55d483c0ed20cf.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "zudello-staff-v3"});

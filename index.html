@@ -122,7 +122,7 @@
     <link href=/js/noprefetch-KSCpc-EUC-H-bcmap.1f35b14e.js rel=prefetch>
     <link href=/js/noprefetch-KSCpc-EUC-V-bcmap.aa7f6696.js rel=prefetch>
     <link href=/js/noprefetch-Katakana-bcmap.4093d1ee.js rel=prefetch>
-    <link href=/js/noprefetch-NWP-H-bcmap.8426f4f7.js rel=prefetch>
+    <link href=/js/noprefetch-NWP-H-bcmap.89abe3eb.js rel=prefetch>
     <link href=/js/noprefetch-NWP-V-bcmap.d5e42595.js rel=prefetch>
     <link href=/js/noprefetch-RKSJ-H-bcmap.b6d43abe.js rel=prefetch>
     <link href=/js/noprefetch-RKSJ-V-bcmap.ae679b55.js rel=prefetch>
@@ -176,12 +176,13 @@
     <link href=/js/noprefetch-UniKS-UTF8-V-bcmap.c4191077.js rel=prefetch>
     <link href=/js/noprefetch-V-bcmap.08759b19.js rel=prefetch>
     <link href=/js/noprefetch-WP-Symbol-bcmap.7fd6ac40.js rel=prefetch>
-    <link href=/css/app.ca847f68.css rel=preload as=style>
-    <link href=/css/chunk-vendors.e3aa3ebe.css rel=preload as=style>
-    <link href=/js/app.8e94ecea.js rel=preload as=script>
-    <link href=/js/chunk-vendors.ef3acc84.js rel=preload as=script>
-    <link href=/css/chunk-vendors.e3aa3ebe.css rel=stylesheet>
-    <link href=/css/app.ca847f68.css rel=stylesheet>
+    <link href=/css/app.5c0ddb12.css rel=preload as=style>
+    <link href=/css/chunk-vendors.c669e5ce.css rel=preload as=style>
+        <!-- ORDER ?-->
+    <link href=/js/app.ae1984f5.js rel=modulepreload as=script>
+    <link href=/js/chunk-vendors.60d43f55.js rel=modulepreload as=script>
+    <link href=/css/chunk-vendors.c669e5ce.css rel=stylesheet>
+    <link href=/css/app.5c0ddb12.css rel=stylesheet>
     <link rel=icon type=image/png sizes=32x32 href=/img/icons/favicon-32x32.png>
     <link rel=icon type=image/png sizes=16x16 href=/img/icons/favicon-16x16.png>
     <link rel=manifest href=/manifest.json>
@@ -198,7 +199,19 @@
 <noscript><strong>We're sorry but zudello-staff-v3 doesn't work properly without JavaScript enabled. Please enable it to
     continue.</strong></noscript>
 <div id=app></div>
-<script src=/js/chunk-vendors.ef3acc84.js></script>
-<script src=/js/app.8e94ecea.js></script>
+<script type=module src=/js/chunk-vendors.60d43f55.js></script>
+<script type=module src=/js/app.ae1984f5.js></script>
+<script>!function () {
+    var e = document, t = e.createElement("script");
+    if (!("noModule" in t) && "onbeforeload" in t) {
+        var n = !1;
+        e.addEventListener("beforeload", function (e) {
+            if (e.target === t) n = !0; else if (!e.target.hasAttribute("nomodule") || !n) return;
+            e.preventDefault()
+        }, !0), t.type = "module", t.src = ".", e.head.appendChild(t), t.remove()
+    }
+}();</script>
+<script src=/js/chunk-vendors-legacy.ef3acc84.js nomodule></script>
+<script src=/js/app-legacy.3f74d07e.js nomodule></script>
 </body>
 </html>

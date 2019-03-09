@@ -11,13 +11,13 @@
  * See https://goo.gl/2aRDsh
  */
 
-importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.5.0/workbox-sw.js");
+importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.b55d0c42b1b33dcf9c55d483c0ed20cf.js"
+  "/precache-manifest.937ba395e0b35f4f668300b07caa2e09.js"
 );
 
-workbox.core.setCacheNameDetails({prefix: "zudello-staff-v3"});
+workbox.core.setCacheNameDetails({prefix: "piaf"});
 
 /**
  * The workboxSW.precacheAndRoute() method efficiently caches and responds to
